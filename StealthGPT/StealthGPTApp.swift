@@ -12,6 +12,9 @@ struct StealthGPTApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(width: 600, height: 400) // Fixed window size
+                .background(CircleAnimationView())
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }

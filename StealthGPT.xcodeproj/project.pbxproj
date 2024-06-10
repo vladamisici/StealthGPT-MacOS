@@ -11,6 +11,9 @@
 		173B580B2C177C3200B6530A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B580A2C177C3200B6530A /* ContentView.swift */; };
 		173B580D2C177C3300B6530A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173B580C2C177C3300B6530A /* Assets.xcassets */; };
 		173B58102C177C3300B6530A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173B580F2C177C3300B6530A /* Preview Assets.xcassets */; };
+		173B58192C179B7100B6530A /* CircleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B58182C179B7100B6530A /* CircleAnimationView.swift */; };
+		173B581B2C179B9600B6530A /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B581A2C179B9600B6530A /* ClipboardMonitor.swift */; };
+		173B581D2C17A32800B6530A /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B581C2C17A32800B6530A /* ConfigurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		173B580C2C177C3300B6530A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		173B580F2C177C3300B6530A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		173B58112C177C3300B6530A /* StealthGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StealthGPT.entitlements; sourceTree = "<group>"; };
+		173B58182C179B7100B6530A /* CircleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationView.swift; sourceTree = "<group>"; };
+		173B581A2C179B9600B6530A /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		173B581C2C17A32800B6530A /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,12 @@
 		173B58072C177C3200B6530A /* StealthGPT */ = {
 			isa = PBXGroup;
 			children = (
+				173B58172C179B1700B6530A /* Views */,
 				173B58082C177C3200B6530A /* StealthGPTApp.swift */,
-				173B580A2C177C3200B6530A /* ContentView.swift */,
 				173B580C2C177C3300B6530A /* Assets.xcassets */,
 				173B58112C177C3300B6530A /* StealthGPT.entitlements */,
 				173B580E2C177C3300B6530A /* Preview Content */,
+				173B581A2C179B9600B6530A /* ClipboardMonitor.swift */,
 			);
 			path = StealthGPT;
 			sourceTree = "<group>";
@@ -67,6 +74,16 @@
 				173B580F2C177C3300B6530A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		173B58172C179B1700B6530A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				173B580A2C177C3200B6530A /* ContentView.swift */,
+				173B58182C179B7100B6530A /* CircleAnimationView.swift */,
+				173B581C2C17A32800B6530A /* ConfigurationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173B58192C179B7100B6530A /* CircleAnimationView.swift in Sources */,
+				173B581D2C17A32800B6530A /* ConfigurationView.swift in Sources */,
+				173B581B2C179B9600B6530A /* ClipboardMonitor.swift in Sources */,
 				173B580B2C177C3200B6530A /* ContentView.swift in Sources */,
 				173B58092C177C3200B6530A /* StealthGPTApp.swift in Sources */,
 			);
@@ -270,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = StealthGPT/StealthGPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -279,6 +300,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = StealthGPT/StealthGPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -306,6 +329,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
