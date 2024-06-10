@@ -1,4 +1,4 @@
-# ![StealthGPT](stealthgpt_preview.png)
+# ![StealthGPT](stealthGPT_preview.png)
 
 # StealthGPT
 
